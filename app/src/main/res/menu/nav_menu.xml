@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_rockets"
+        android:icon="@drawable/rocket"
+        android:title="Roketler"  />
+    <item
+        android:id="@+id/navigation_favorites"
+        android:icon="@drawable/favorite_blue"
+        android:title="Favorilerim" />
+    <item
+        android:id="@+id/navigation_upcoming"
+        android:icon="@drawable/upcoming"
+        android:title="Fırlatmalar" />
+
+</menu>

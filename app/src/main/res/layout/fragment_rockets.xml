@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rocketLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#998FAC"
+        android:clickable="true"
+        android:focusable="true"
+        tools:context=".ui.main.home.rockets.RocketsFragment"
+        tools:ignore="ExtraText">,
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rocketRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/noRocketLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#998FAC"
+       >
+
+        <ImageView
+            android:id="@+id/nodataimage"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="128dp"
+            android:src="@drawable/nodata"
+          />
+
+        <TextView
+            android:id="@+id/nodataheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nodataimage"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:text="Roket Bulunmamaktadır"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nodatatext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nodataheading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginVertical="32dp"
+            android:gravity="center"
+            android:text="Listeyi yenilemek için tıklayın"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/try_again_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nodatatext"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:paddingHorizontal="32dp"
+            android:text="Tekrar Deneyin"
+            android:textAllCaps="false"
+            app:cornerRadius="16dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

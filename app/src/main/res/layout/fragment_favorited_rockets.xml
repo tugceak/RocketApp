@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+    <FrameLayout
+        android:id="@+id/FavoritesFullLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#998FAC"
+        android:focusable="true"
+        android:clickable="true"
+         tools:context=".ui.main.home.favorite_rockets.FavoritedRocketsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/facoritedRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+     </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="#998FAC"
+        android:id="@+id/noFavoriteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/nofavimage"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="128dp"
+            android:src="@drawable/nodata" />
+
+        <TextView
+            android:id="@+id/nofavheading"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nofavimage"
+            android:layout_centerHorizontal="true"
+            android:text="Hiç Favori Roketiniz Yok"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nofavtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nofavheading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginVertical="32dp"
+            android:gravity="center"
+            android:text="Listeyi yenilemek için tıklayın"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/try_again_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nofavtext"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:paddingHorizontal="32dp"
+            android:text="Tekrar Deneyin"
+            android:textAllCaps="false"
+            app:cornerRadius="16dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

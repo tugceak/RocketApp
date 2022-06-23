@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/upcLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.home.upcoming_launches.UpcomingLaunchesFragment"
+    android:background="#998FAC"
+    android:focusable="true"
+    android:clickable="true">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcomingRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="#998FAC"
+        android:id="@+id/noupcLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/noupcimage"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="128dp"
+            android:src="@drawable/nodata" />
+
+        <TextView
+            android:id="@+id/noupcheading"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noupcimage"
+            android:layout_centerHorizontal="true"
+            android:text="Fırlatma Bulunmamaktadır"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noupctext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noupcheading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginVertical="32dp"
+            android:gravity="center"
+            android:text="Listeyi yenilemek için tıklayın"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/try_again_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noupctext"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:paddingHorizontal="32dp"
+            android:text="Tekrar Deneyin"
+            android:textAllCaps="false"
+            app:cornerRadius="16dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/navigation_rockets">
+
+    <fragment
+        android:id="@+id/navigation_rockets"
+        android:name="com.example.rocketappdemo.ui.main.home.rockets.RocketsFragment"
+        android:label="fragment_rockets"
+        tools:layout="@layout/fragment_rockets" >
+        <action
+            android:id="@+id/toRocketDetailFragment"
+            app:destination="@id/rocketDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rocketDetailFragment"
+        android:name="com.example.rocketappdemo.ui.main.home.rocket_detail.RocketDetailFragment"
+        android:label="fragment_rocket_detail"
+        tools:layout="@layout/fragment_rocket_detail" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/launchDetailFragment"
+        android:name="com.example.rocketappdemo.ui.main.home.launch_detail.LaunchDetailFragment"
+        android:label="fragment_launch_detail"
+        tools:layout="@layout/fragment_launch_detail" >
+        <argument
+            android:name="idLaunch"
+            app:argType="string" />
+        <action
+            android:id="@+id/backToLaunchFragment"
+            app:destination="@id/navigation_upcoming" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_upcoming"
+        android:name="com.example.rocketappdemo.ui.main.home.upcoming_launches.UpcomingLaunchesFragment"
+        android:label="fragment_upcoming_launches"
+        tools:layout="@layout/fragment_upcoming_launches" >
+        <action
+            android:id="@+id/toLaunchDetail"
+            app:destination="@id/launchDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.example.rocketappdemo.ui.main.home.favorite_rockets.FavoritedRocketsFragment"
+        android:label="fragment_favorited_rockets"
+        tools:layout="@layout/fragment_favorited_rockets" >
+        <action
+            android:id="@+id/favToDetail"
+            app:destination="@id/rocketDetailFragment" />
+    </fragment>
+</navigation>

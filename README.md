@@ -4,7 +4,7 @@
 
 ## RocketApp
 ROCKETAPP is an Android Application that fetch data from /api.spacexdata.com/v4/
-and list data in recyclerview.And it uses to ROOM keep favorite Rockets and Launches.
+and list data in recyclerview.And it uses to Room keep favorite Rockets and Launches.
 
 The main goal of this app is to be a sample of how to build an high quality Android application that uses the Architecture components, Retrofit2 etc. in Kotlin.
 

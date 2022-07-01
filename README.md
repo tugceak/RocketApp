@@ -21,3 +21,7 @@ Hilt provides a standard way to use DI in your application by providing containe
 <img width="581" alt="Ekran Resmi 2022-07-01 13 47 05" src="https://user-images.githubusercontent.com/103635954/176880566-0b5da5cc-5d81-4911-be9e-902d04230477.png">
 
 ## ScreenShots
+![2bce65af-55e2-4161-8cb6-358f77b272ff](https://user-images.githubusercontent.com/103635954/176880746-d6f15b2f-3dd2-42a3-8fd9-31b655afc65c.jpg)
+
+
+![df51df5a-326f-422a-858f-222ecedd4e11](https://user-images.githubusercontent.com/103635954/176880938-6ea2bb4f-891f-4602-827a-dcb07df0f898.jpg)

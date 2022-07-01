@@ -18,4 +18,6 @@ Hilt is a dependency injection library for Android that reduces the boilerplate 
 Hilt provides a standard way to use DI in your application by providing containers for every Android class in your project and managing their lifecycles automatically. Hilt is built on top of the popular DI library Dagger to benefit from the compile-time correctness, runtime performance, scalability, and Android Studio support that Dagger provides
 ## Project Structure
 
+<img width="581" alt="Ekran Resmi 2022-07-01 13 47 05" src="https://user-images.githubusercontent.com/103635954/176880566-0b5da5cc-5d81-4911-be9e-902d04230477.png">
+
 ## ScreenShots
